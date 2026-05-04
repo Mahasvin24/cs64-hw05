@@ -78,7 +78,7 @@ string disassemble( string hex ) {
     sol += ", ";
 
     // adjust opcode being unsigned or signed
-    if (opcode == 9 || opcode == 12 || opcode == 13) {
+    if (opcode == 12 || opcode == 13) {
         sol += to_string(u_immediate);
     } else {
         sol += to_string(s_immediate);
